@@ -27,7 +27,11 @@ def predict():
         predicts = utils.predict_price(age, anaemia, creatinine_phos, diabetes, ejection, hbp, plat, serum_creatinine,
                                        serum_sodium, sex, smoking, time)
         value = str(predicts)[1:-1]
-    return render_template('result.html', prediction_text='Predicted Outcome: {}'.format(value))
+        if value == 1:
+            res = 'Positive'
+        else:
+            res = 'Negative'
+    return render_template('result.html', prediction_text='Predicted Outcome: {}'.format(res))
 
 
 if __name__ == '__main__':
