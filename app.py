@@ -31,7 +31,7 @@ def predict():
             res = 'Positive'
         else:
             res = 'Negative'
-    return render_template('result.html', prediction_text='Predicted Outcome: {}'.format(res))
+    return render_template('result.html', prediction_text='Predicted Outcome: {}'.format(value))
 
 
 if __name__ == '__main__':
