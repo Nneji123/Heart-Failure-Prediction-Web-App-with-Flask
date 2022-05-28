@@ -30,6 +30,8 @@ In this project I tested 6 different classification algorithms namely:
 4. XGBoost
 5. GradientBoostClassifier
 6. SupportVectorClassifier
+
+
 The final model used for the app was the Gradient Boost Classifier model which had an accuracy score of 0.833.
 
 
